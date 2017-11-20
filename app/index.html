@@ -11,33 +11,39 @@
 </head>
 
 <body>
-    <header class="flex-col">
+    <header class="flex-col" id="home">
         <nav class="flex-row flex-middle flex-between">
             <a href="">
                 <h1>Up Hiring</h1>
             </a>
             <ul class="flex-row">
-                <li><a href="">Home</a></li>
-                <li><a href="">Why UP HIRING</a></li>
-                <li><a href="">Features</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#why">Why UP HIRING</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="">Testiomonials</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="" class="started">Get started</a></li>
             </ul>
         </nav>
-        <div class="banner flex-col">
-            <div class="banner-content">
-                <div class="flex-row flex-middle">
-                    <div class="decoration"></div>
-                    <span>Small caption</span>
+        <div class="flex-row">
+            <div class="banner flex-col">
+                <div class="banner-content">
+                    <div class="flex-row flex-middle">
+                        <div class="decoration"></div>
+                        <span>Small caption</span>
+                    </div>
+                    <h2>Take control of your data</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <div class="flex-row">
+                        <div class="button button-started flex-row flex-centered">Get started</div>
+                        <div class="button button-features flex-row flex-centered">Explore Features</div>
+                    </div>
                 </div>
-                <h2>Take control of your data</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-                <div class="flex-row">
-                    <div class="button button-started flex-row flex-centered">Get started</div>
-                    <div class="button button-features flex-row flex-centered">Explore Features</div>
-                </div>
-
+            </div>
+            <div class="language-switcher flex-row">
+                <a href="" class="active">EN</a>
+                <span>|</span>
+                <a href="">RU</a>
             </div>
         </div>
         <div class="scroll-arrow flex-col flex-centered">
@@ -45,7 +51,7 @@
         </div>
 
     </header>
-    <section class="s-why flex-col">
+    <section class="s-why flex-col" id="why">
         <div class="flex-row flex-right">
             <div class="why-content">
                 <div class="flex-row flex-middle">
@@ -64,7 +70,7 @@
             <i class="icon icon-arrow-down"></i>
         </div>
     </section>
-    <section class="s-features flex-col flex-middle">
+    <section class="s-features flex-col flex-middle" id="features">
         <div class="features-text flex-col flex-middle">
             <div class="flex-row flex-middle">
                 <div class="decoration-white"></div>
@@ -134,15 +140,39 @@
             </div>
 
         </div>
-
+        <div class="scroll-arrow flex-col flex-centered">
+            <i class="icon icon-arrow-down"></i>
+        </div>
     </section>
-    <footer>
+    <footer class="flex-col">
+        <nav class="flex-row flex-middle flex-between">
+            <a href="">
+                <h1>Up Hiring</h1>
+            </a>
+            <ul class="flex-row">
+                <li><a href="">Home</a></li>
+                <li><a href="">Why UP HIRING</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Testiomonials</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="" class="started">Get started</a></li>
+            </ul>
+        </nav>
+        <div class="social-and-copy flex-row flex-between">
+            <span class="copyright">© 2017 Demchenko Dmitriy</span>
+            <div class="flex-row socials">
+                <i class="icon icon-facebook"></i>
+                <i class="icon icon-twitter"></i>
+                <i class="icon icon-gplus"></i>
+                <i class="icon icon-instagram"></i>
+            </div>
+        </div>
     </footer>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
     <link rel="stylesheet" href="fonts/fontello/css/fontello-codes.css">
-
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/common.min.js"></script>
 </body>
 
 </html>
