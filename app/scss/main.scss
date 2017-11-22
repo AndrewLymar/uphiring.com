@@ -84,12 +84,18 @@ h6 {
     height: auto;
 }
 
+section {
+    width: 100%;
+}
+
 .scroll-arrow {
-    position: absolute;
-    bottom: 70px;
     width: 65px;
     height: 65px;
-    align-self: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 70px;
     border-radius: 50%;
     background-color: #fff;
     color: #ACB0BA;
@@ -229,7 +235,8 @@ header {
     margin-left: auto;
     margin-right: 1%;
     transform: rotate(-90deg);
-    a, span {
+    a,
+    span {
         margin-right: 13px;
         color: #C0BEC2;
     }
@@ -320,9 +327,9 @@ footer {
                     color: #fff;
                     border: 1px solid #D7DBE8;
                     border-radius: 36px;
-                    background-color: #fe8c00; 
+                    background-color: #fe8c00;
                     &:hover {
-                        background-color: #fff; 
+                        background-color: #fff;
                         border: 1px solid #fe8c00;
                         color: #999;
                     }

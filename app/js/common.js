@@ -3,6 +3,7 @@ $(function () {
     var nav = $("nav");
     $(document).on("scroll", onScroll);
     $("a[href^='#']").on("click", scrollTo);
+    $(".scroll-arrow").on("click", scrollToNext);
 
     $(window).on("resize", function () {
         if (!menuIsOpened && $(document).width() > "480") {
@@ -35,7 +36,7 @@ $(function () {
             nav.removeClass("active");
         }
 
-        $("nav ul li a").each(function () {
+        $("nav a").each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
@@ -47,22 +48,34 @@ $(function () {
         });
     }
 
+    function scrollToNext(event) {
+        var currentId;
+        var nextId;
+        var target;
+        event.preventDefault();
+        currentId = $(this).parent();
+        nextId = currentId.next();
+        target = nextId;
+        scroll(target);
+    }
+
     function scrollTo(event) {
         event.preventDefault();
-        $(document).off("scroll");
-
         $("a").each(function () {
             $(this).removeClass("active");
         })
         $(this).addClass("active");
+        var target = this.hash;
+        scroll(target);
+    }
 
-        var target = this.hash,
-            menu = target;
+    function scroll(target) {
+        $(document).off("scroll");
+
         $target = $(target);
         $("html, body").stop().animate({
             'scrollTop': $target.offset().top + 2
         }, 800, "swing", function () {
-            window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
     }
