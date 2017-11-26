@@ -84,10 +84,6 @@ h6 {
     height: auto;
 }
 
-section {
-    width: 100%;
-}
-
 .scroll-arrow {
     width: 65px;
     height: 65px;
@@ -122,15 +118,22 @@ section {
     }
 }
 
+.decoration.hide-lg {
+    display: none;
+}
+
 .decoration-white {
     @extend .decoration;
     border-bottom: 1px solid #fff;
 }
 
+.button-container {
+    width: 100%;
+}
+
 .button {
     width: 190px;
     height: 50px;
-    margin-right: 10px;
     border-radius: 36px;
     font-size: 16px;
     text-decoration: none;
@@ -170,6 +173,11 @@ nav {
     h1 {
         text-transform: uppercase;
     }
+    .mobile-menu-icon {
+        display: none;
+        width: 50px;
+        height: 50px;
+    }
     ul {
         li {
             list-style: none;
@@ -181,7 +189,6 @@ nav {
                 padding: 15px;
                 cursor: pointer;
                 &:hover {
-                    border-bottom: 2px solid #fe8c00;
                     color: #fe8c00;
                 }
             }
@@ -219,14 +226,12 @@ header {
     }
 }
 
-.banner {
-    .banner-content {
-        width: 380px;
-        margin-top: 360px;
-        margin-left: 255px;
-        span {
-            text-transform: uppercase;
-        }
+.banner-content {
+    width: 390px;
+    margin-top: 360px;
+    margin-left: 255px;
+    span {
+        text-transform: uppercase;
     }
 }
 
