@@ -6,9 +6,9 @@ $(function () {
     $(".scroll-arrow").on("click", scrollToNext);
 
     $(window).on("resize", function () {
-        if (!menuIsOpened && $(document).width() > "768") {
+        if (!menuIsOpened && $(document).width() > "800") {
             showMenu();
-        } else if (menuIsOpened && $(document).width() < "768") {
+        } else if (menuIsOpened && $(document).width() < "800") {
             hideMenu();
         }
     });
@@ -22,7 +22,7 @@ $(function () {
     });
 
     $("nav ul li a").on("click", function () {
-        if ($(document).width() <= "768") {
+        if ($(document).width() <= "800") {
             hideMenu();
         }
     });

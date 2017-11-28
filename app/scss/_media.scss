@@ -25,7 +25,7 @@
 
 @media only screen and (max-width: 992px) {}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     header {
         background: #5F5865;
         nav {
@@ -41,6 +41,7 @@
                 display: flex;
             }
             ul {
+                display: none;
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
@@ -75,8 +76,8 @@
         align-items: center;
     }
     .button-container {
-        width: 90%;
-        justify-content: center;
+        width: 390px;
+        justify-content: space-between;
         .button {
             margin-top: 25px;
         }
@@ -97,23 +98,40 @@
     }
     .language-switcher {
         margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
         transform: rotate(0deg);
     }
+    .s-why {
+        background: #F1F3F7;
+    }
     .why-container {
+        align-items: center;
+        align-content: center;
         justify-content: center;
-        .why-content {
-            margin-right: 0;
+        .content {
+            margin: 0px;
+            margin-top: 125px;
+        }
+    }
+    .why-content {
+        .button-container {
+            width: 100%;
+            justify-content: center;
+            .button {
+                margin-top: 25px;
+            }
         }
     }
     .s-features {
+        .features-text {
+            margin-top: 125px;
+        }
         .features {
-            .features-text {
-                margin-top: 100px;
-            }
             justify-content: center;
-            .feature {
-                margin-bottom: 15px;
-            }
+        }
+        .feature {
+            margin-bottom: 15px;
         }
     }
     footer {
@@ -124,6 +142,16 @@
 }
 
 @media only screen and (max-width: 480px) {
+    header {
+        .button-container {
+            width: 100%;
+            justify-content: center;
+            .button {
+                margin-top: 25px;
+                margin-right: 5px;
+            }
+        }
+    }
     .features {
         .feature {
             width: 90%;
