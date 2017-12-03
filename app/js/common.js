@@ -89,4 +89,42 @@ $(function () {
         $("nav ul").css("display", "none");
         menuIsOpened = false;
     }
+
+    var currentLanguage = getCurrentBrowserLanguage();
+
+
+    $(".lng").on("click", changeLanguage);
+
+    switch (currentLanguage) {
+        case "ru":
+            currentLanguage = "ru";
+            break;
+        case "uk":
+            currentLanguage = "ru";
+            break;
+        default:
+            currentLanguage = "en";
+    }
+
+    function getCurrentBrowserLanguage() {
+        var language = window.navigator ? (window.navigator.language ||
+            window.navigator.systemLanguage ||
+            window.navigator.userLanguage) : "ru";
+        language = language.substr(0, 2).toLowerCase();
+        return language;
+    }
+
+    function changeLanguage(currentLanguage) {
+        var lang = this.id ? this.id : currentLanguage;
+        var url = '/' + currentLanguage;
+        $.html5Translate(dict, lang);
+    }
+
+    $.html5Translate = function (dict, lang) {
+        $('[data-translate-key]').each(function () {
+            $(this).html(dict[lang][$(this).data('translateKey')]);
+        });
+    };
+    
+    changeLanguage(currentLanguage);
 });
