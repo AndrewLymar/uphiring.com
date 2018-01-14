@@ -27,19 +27,6 @@ body {
 }
 
 /**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
@@ -61,14 +48,6 @@ figcaption,
 figure,
 main { /* 1 */
   display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
 }
 
 /**
@@ -155,15 +134,6 @@ dfn {
 }
 
 /**
- * Add the correct background and color in IE 9-.
- */
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
  * Add the correct font size in all browsers.
  */
 
@@ -194,15 +164,6 @@ sup {
 
 /* Embedded content
    ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
-}
 
 /**
  * Add the correct display in iOS 4-7.
@@ -334,7 +295,6 @@ legend {
  */
 
 progress {
-  display: inline-block; /* 1 */
   vertical-align: baseline; /* 2 */
 }
 
@@ -403,7 +363,6 @@ textarea {
  * 1. Add the correct display in Edge, IE, and Firefox.
  */
 
-details, /* 1 */
 menu {
   display: block;
 }
@@ -418,14 +377,6 @@ summary {
 
 /* Scripting
    ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
 
 /**
  * Add the correct display in IE.
