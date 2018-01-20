@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
 	header {
 		nav {
 			padding-left: 40px;
@@ -11,8 +11,10 @@
 	}
 	.s-why {
 		background-position: 60%;
-		.why-content {
-			margin-right: 60px;
+	}
+	.language-switcher {
+		a.active {
+			color: #fe8c00;
 		}
 	}
 }
@@ -137,6 +139,7 @@
 	.s-why {
 		height: auto;
 		background: #F1F3F7;
+		padding-right: 15px;
 		.button-why {
 			margin-bottom: 240px;
 		}
