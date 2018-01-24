@@ -10,10 +10,12 @@
 		margin-left: 65px;
 	}
 	.s-why {
-		background-position: 60%;
+		padding-right: 5%;
+		background-position: 70%;
 	}
 	.language-switcher {
-		a.active {
+		a.active,
+		a:hover {
 			color: #fe8c00;
 		}
 	}
@@ -46,7 +48,48 @@
 	}
 }
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	header {
+		nav {
+			margin-top: 5px;
+		}
+	}
+	nav {
+		padding: 10px!important;
+		ul {
+			width: 100%;
+			justify-content: space-between;
+			padding: 0;
+			li {
+				margin-right: 1px;
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.s-why {
+		padding-right: 5px;
+	}
+	.features {
+		justify-content: center;
+	}
+	.s-about {
+		.container {
+			padding-right: 10px;
+		}
+	}
+	.team-content {
+		width: 80%;
+	}
+	.employees {
+		justify-content: center;
+	}
+	footer {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
 
 @media only screen and (max-width: 800px) {
 	section {
@@ -73,7 +116,7 @@
 				flex-direction: column;
 				align-items: center;
 				position: absolute;
-				top: 76px;
+				top: 56px;
 				left: 0;
 				right: 0;
 				padding: 0;
@@ -191,6 +234,11 @@
 			}
 		}
 	}
+	.s-features {
+		.features-img {
+			width: 100%;
+		}
+	}
 	.features {
 		.feature {
 			width: 90%;
@@ -200,6 +248,13 @@
 			&-text {
 				width: 100%;
 			}
+		}
+	}
+	.employee {
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 300px;
 		}
 	}
 }

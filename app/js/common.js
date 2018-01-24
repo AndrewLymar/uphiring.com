@@ -4,7 +4,12 @@ $(function () {
 	$(document).on("scroll", onScroll);
 	$("a[href^='#']").on("click", scrollTo);
 	$(".scroll-arrow").on("click", scrollToNext);
-
+	$(".button-started").on("click", function () {
+		scroll($("#why"));
+	});
+	$(".button-why").on("click", function () {
+		scroll($("#features"));
+	});
 	$(window).on("resize", function () {
 		if (!menuIsOpened && $(document).width() > "800") {
 			showMenu();
@@ -89,4 +94,12 @@ $(function () {
 		$("nav ul").css("display", "none");
 		menuIsOpened = false;
 	}
+
+	$('.slidewrap').carousel({
+		slider: '.slider',
+		slide: 'li',
+		nextSlide: '.next',
+		prevSlide: '.prev',
+		speed: 300 // ms.
+	});
 });
