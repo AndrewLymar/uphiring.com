@@ -1,0 +1,76 @@
+{
+  "name": "down",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "b8d0c7d76e87b94882329a88e8e43d3d",
+      "css": "gplus",
+      "code": 61653,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "615c206bd108a3d27a963009c7d8b198",
+      "css": "arrow-right",
+      "code": 8594,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M152.7 1000C157.9 1000 163.1 998 167.1 994L646.7 514.4C654.4 506.8 654.4 493.3 646.7 485.6L167.1 6C163.3 2.1 158.1 0 152.7 0 147.3 0 142.1 2.1 138.3 6L6 138.3C2 142.3 0 147.5 0 152.7 0 157.9 2 163.1 6 167.1L338.9 500 6 832.9C-1.7 840.6-1.7 854.1 6 861.7L138.3 994C142.3 998 147.5 1000 152.7 1000Z",
+        "width": 652
+      },
+      "search": [
+        "arrow-right"
+      ]
+    },
+    {
+      "uid": "653436c04d5b4bf99653a4017750acbd",
+      "css": "arrow-left",
+      "code": 8592,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M499.8 0C494.5 0 489.3 2 485.4 6L5.7 485.6C-1.9 493.2-1.9 506.7 5.7 514.4L485.4 994C489.2 997.9 494.4 1000 499.8 1000 505.2 1000 510.3 997.9 514.2 994L646.5 861.7C650.5 857.7 652.5 852.5 652.5 847.3 652.5 842.1 650.5 836.9 646.5 832.9L313.6 500 646.5 167.1C654.1 159.4 654.1 145.9 646.5 138.3L514.1 6C510.2 2 505 0 499.8 0Z",
+        "width": 652
+      },
+      "search": [
+        "arrow-left"
+      ]
+    },
+    {
+      "uid": "7f4424a35483d1209e7be72f644a8b32",
+      "css": "arrow-down",
+      "code": 11015,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M306.3 0V762.5L87.5 537.5 0 631.2 368.8 1000 743.8 631.2 656.3 537.5 431.3 762.5V0Z",
+        "width": 744
+      },
+      "search": [
+        "arrow-down"
+      ]
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    }
+  ]
+}
