@@ -95,11 +95,17 @@ $(function () {
 		menuIsOpened = false;
 	}
 
-	$('.slidewrap').carousel({
-		slider: '.slider',
-		slide: 'li',
-		nextSlide: '.next',
-		prevSlide: '.prev',
-		speed: 300 // ms.
+	$('.slide-wrapper').flexslider({
+		selector: ".slider > li",
+		animation: "slide",
+		controlNav: false,
+		slideshow: true,
+		smoothHeight: true,
+		start: function(){
+			$('.slider').children('li').css({
+				'opacity': 1,
+				'position': 'relative'
+			});
+		}
 	});
 });
