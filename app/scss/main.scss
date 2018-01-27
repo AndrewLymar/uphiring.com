@@ -286,38 +286,43 @@ header {
 	.slide-wrapper {
 		width: 35%;
 		margin-right: 5%;
-		.slide {
-			
-		}
+		.slide {}
 		p {
 			margin: 0;
 		}
 		.review-text {
-			width: 100%;
+			width: 99%;
 			margin-bottom: 15px;
 			font-size: 16px;
-			font-family: 'Playfair Display', serif;		
+			font-family: 'Playfair Display', serif;
 			font-style: italic;
+			margin-left: -35px;
 			color: #999;
 		}
 		.name {
+			margin-left: -35px;
 			font-weight: 600;
 			font-size: 18px;
 			text-transform: uppercase;
 			color: #565674;
 		}
 		.position {
+			margin-left: -35px;
 			font-size: 12px;
 			color: #B3B3B3;
 		}
 		.flex-direction-nav {
 			display: flex;
+			padding: 0;
 			flex-direction: row;
 			justify-content: space-between;
 			list-style: none;
+			a {
+				font-size: 18px;
+				color: #999;
+			}
 		}
 		.flex-viewport {
-			width: 100%!important;
 			height: 100%!important;
 		}
 	}

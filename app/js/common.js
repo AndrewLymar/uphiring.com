@@ -101,6 +101,8 @@ $(function () {
 		controlNav: false,
 		slideshow: true,
 		smoothHeight: true,
+		prevText: "<<",           
+		nextText: ">>",
 		start: function(){
 			$('.slider').children('li').css({
 				'opacity': 1,
