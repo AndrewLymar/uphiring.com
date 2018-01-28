@@ -3,6 +3,7 @@
 @import "normalize";
 @import "global";
 @import "flex";
+@import "iziModal.min.css";
 @import "../fonts/fontello/css/fontello.css";
 h2 {
 	font-size: 26px;
@@ -352,6 +353,9 @@ header {
 			margin-left: -35px;
 			color: #999;
 		}
+		.review-about {
+			height: 60px;
+		}
 		.name {
 			margin-left: -35px;
 			font-weight: 600;
@@ -376,7 +380,7 @@ header {
 			}
 		}
 		.flex-viewport {
-			height: 100%!important;
+
 		}
 	}
 	img {
@@ -413,7 +417,7 @@ header {
 .team-content {
 	margin-top: 50px;
 	width: 90%;
-	max-width: 1500px;
+	max-width: 1700px;
 }
 
 .employees {
