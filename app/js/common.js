@@ -110,12 +110,11 @@ $(function () {
 			});
 		}
 	});
-	$("#modal").iziModal();
-	$(".started").on("click", function (event) {
+	$("#modal").iziModal({
+	});
+	$(".trigger-modal").on("click", function (event) {
 		console.log("ololo");
-		event.preventDefault();
-		//$('#modal').iziModal('setZindex', 99999);
-		//$('#modal').iziModal('open', { zindex: 99999 });
+		event.preventDefault();	
 		$('#modal').iziModal('open');
 	});
 

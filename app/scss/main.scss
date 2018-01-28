@@ -102,12 +102,48 @@ h2 {
 	color: #999
 }
 
-.iziModal-wrap {
-	display: flex;
-	.iziModal-content {
-		text-align: center;
-		h3 {
-			font-size: 36px;
+#modal {
+	background-color: #534B5A;
+	.iziModal-wrap {
+		display: flex;
+		border-radius: 25px;
+		.iziModal-content {
+			padding: 40px 30px!important;
+			button {
+				background: #fe8c00;
+				margin-bottom: 10px;
+				position: absolute;
+				right: -8px;
+				top: -8px;
+				font-size: 14px;
+				font-weight: bold;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				border: 0;
+				color: #a9a9a9;
+				cursor: pointer;
+				border: none;
+				outline: none;
+			}
+			.icon-close:before {
+				color: #fff;
+				content: "X";
+			}
+			.modal-container {
+				margin-top: 50px;
+			}
+			h3 {
+				text-align: center;
+				font-size: 34px;
+				color: #fff;
+			}
+			p {
+				color: #fff;
+				span {
+					color: #fe8c00;
+				}
+			}
 		}
 	}
 }
@@ -241,9 +277,15 @@ header {
 	h2 {
 		font-size: 31px;
 	}
-	.features-img {
+	.features-img-container {
 		width: 90%;
 		max-width: 1300px;
+		background: url('../img/3-layers.png') no-repeat;
+		background-size: contain;
+		.features-img {
+			width: 100%;
+			margin-top: 2%;
+		}
 	}
 }
 
@@ -363,7 +405,7 @@ header {
 
 .about-us {
 	height: 1080px;
-	margin-top: 50px;
+	margin-top: 100px;
 	background: url(../img/about-bg.jpg) no-repeat;
 	background-size: cover;
 }
@@ -402,7 +444,7 @@ header {
 	background-size: cover;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 	.button-features {
 		margin-left: 25px;
 	}

@@ -23,8 +23,8 @@
 				<li><a href="#features">Возможности</a></li>
 				<li><a href="#review">Отзывы</a></li>
 				<li><a href="#about">О нас </a></li>
-				<li><a href="">Контакты </a></li>
-				<li><a href="" class="started">Поддержать</a></li>
+				<li><a href="#contacts">Контакты </a></li>
+				<li><a href="" class="started trigger-modal">Поддержать</a></li>
 			</ul>
 		</nav>
 		<div class="banner-container flex-row flex-middle">
@@ -174,13 +174,16 @@
 
 
 		</div>
-		<img src="img/features.jpg" class="features-img" alt="features">
+		<div class="features-img-container">
+			<img src="img/features.jpg" class="features-img" alt="features">
+		</div>
+		
 		<div class="scroll-arrow flex-col flex-centered">
 			<i class="icon icon-arrow-down"></i>
 		</div>
 	</section>
 	<section class="s-review flex-col" id="review">
-		<div class="review-content flex-row flex-middle flex-between">
+		<div class="review-content flex-row flex-middle flex-between flex-wrap">
 			<div class="slide-wrapper">
 				<div class="content dark-color-text flex-col">
 					<div class="decorations flex-row flex-middle">
@@ -191,13 +194,13 @@
 				</div>
 				<ul class="slider">
 					<li class="slide ">
-						<p class="review-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Одна предупредила от всех реторический, переулка пор букв которое меня рукопись однажды вопроса, пояс путь. Свой оксмокс то lorem предупреждал ipsum?</p>
+						<p class="review-text">Всем привет! Продолжаю рассказывать о тех приложениях, которые я ежедневно использую в своем iphone, так что не могу не упомянуть о приложении дня) Собственно, тут все просто - каждый день какое-то платное приложение из App Store на день становится бесплатным.</p>
 						<p class="name">John</p>
 						<p class="position">HR, Apple</p>
 
 					</li>
 					<li class="slide">
-						<p class="review-text">OLLLSSODO SLDSLDLSDLSLDLS DLSLDLSLLSL DLSDLSLDLSLDLS DLSL</p>
+						<p class="review-text">Отличное приложение, пользуюсь им с самого начала, с тех пор, когда оно ещё платным было. С тех пор добавили много классных функций и даже навигацию</p>
 						<p class="name">Jack</p>
 						<p class="position">HR, Apple</p>
 
@@ -205,9 +208,10 @@
 				</ul>
 			</div>
 			<img src="img/iphones.jpg" alt="" class="src">
-			<div class="scroll-arrow arrow-shadow flex-col flex-centered">
-				<i class="icon icon-arrow-down"></i>
-			</div>
+
+		</div>
+		<div class="scroll-arrow arrow-shadow flex-col flex-centered">
+			<i class="icon icon-arrow-down"></i>
 		</div>
 	</section>
 	<section class="s-about flex-col flex-middle">
@@ -262,12 +266,12 @@
 			<i class="icon icon-arrow-down"></i>
 		</div>
 	</section>
-	<section class="s-contacts flex-col flex-middle">
+	<section class="s-contacts flex-col flex-middle" id="contacts">
 		<div class="contacts-content flex-col flex-middle">
 			<p>Контакты</p>
 			<h2>Помощь проекту</h2>
 			<div class="flex-row flex-wrap">
-				<div class="button button-started flex-row flex-centered">Помочь</div>
+				<div class="button button-started trigger-modal flex-row flex-centered">Поддержать</div>
 				<div class="button button-features flex-row flex-centered">Ваши идеи</div>
 			</div>
 		</div>
@@ -279,14 +283,14 @@
 			<a href="">
 				<h1>Up Hiring</h1>
 			</a>
-			<ul class="flex-row flex-wrap">
+			<ul class="flex-row">
 				<li><a href="#home">Главная</a></li>
 				<li><a href="#why">Почему UP HIRING</a></li>
 				<li><a href="#features">Возможности</a></li>
-				<li><a href="">Отзывы</a></li>
-				<li><a href="">О нас </a></li>
-				<li><a href="">Контакты </a></li>
-				<li><a href="" class="started">Поддержать</a></li>
+				<li><a href="#review">Отзывы</a></li>
+				<li><a href="#about">О нас </a></li>
+				<li><a href="#contacts">Контакты </a></li>
+				<li><a href="" class="started trigger-modal">Поддержать</a></li>
 			</ul>
 		</nav>
 		<div class="social-and-copy flex-row flex-between">
@@ -300,9 +304,13 @@
 		</div>
 	</footer>
 	<div id="modal">
-		<h3>Помошь</h3>
-		<p>Bitcion</p>
-		<p>WebMoney</p>
+		<button data-izimodal-close="" class="icon-close"></button>
+		<h3>Помощь проекту</h3>
+		<div class="modal-container">
+			<p><span>bitcion: </span>43543srfsd232ewdsds</p>
+			<p><span>webmoney: </span>43543srfsd232ewdsds</p>
+			<p><span>visa/mastercard: </span>43543srfsd232ewdsds</p>
+		</div>
 	</div>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&amp;subset=cyrillic" rel="stylesheet">

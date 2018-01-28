@@ -1,42 +1,179 @@
-@media only screen and (max-width: 1500px) {
-	header {
+	@media only screen and (max-width: 1500px) {
+		header {
+			nav {
+				padding-left: 40px;
+				padding-right: 25px;
+				margin-top: 50px;
+			}
+		}
+		.banner-content {
+			margin-left: 65px;
+		}
+		.s-why {
+			padding-right: 5%;
+			background-position: 70%;
+		}
+		.language-switcher {
+			a.active,
+			a:hover {
+				color: #fe8c00;
+			}
+		}
+	}
+	
+	@media only screen and (max-width: 1200px) {
+		.features {
+			width: 90%;
+		}
+		.s-about {
+			padding: 0;
+			.container {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		.about-img-container {
+			margin-bottom: 60px;
+		}
+		body {
+			.s-about {
+				.content {
+					width: 90%;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}
+		}
+		.review-content {
+			padding-left: 3%;
+			padding-right: 3%;
+			.slide-wrapper {
+				width: 90%;
+			}
+			img {
+				width: 80%;
+			}
+		}
+	}
+	
+	@media only screen and (max-width: 992px) {
+		header {
+			nav {
+				margin-top: 5px;
+			}
+		}
 		nav {
-			padding-left: 40px;
-			padding-right: 25px;
-			margin-top: 50px;
+			padding: 10px!important;
+			ul {
+				width: 100%;
+				justify-content: space-between;
+				padding: 0;
+				li {
+					margin-right: 1px;
+					a {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.s-why {
+			padding-right: 5px;
+		}
+		.features {
+			justify-content: center;
+		}
+		body {
+			.s-about {
+				.container {
+					padding-right: 10px;
+					.content {
+						justify-content: center;
+					}
+				}
+			}
+		}
+		.team-content {
+			width: 80%;
+		}
+		.employees {
+			justify-content: center;
+		}
+		footer {
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 	}
-	.banner-content {
-		margin-left: 65px;
-	}
-	.s-why {
-		padding-right: 5%;
-		background-position: 70%;
-	}
-	.language-switcher {
-		a.active,
-		a:hover {
-			color: #fe8c00;
+	
+	@media only screen and (max-width: 800px) {
+		section {
+			padding-left: 15px;
+			padding-right: 15px;
 		}
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.features {
-		width: 90%;
-	}
-	.s-about {
-		padding: 0;
-		.container {
+		header {
+			height: auto;
+			background: #5F5865;
+			nav {
+				width: 100%;
+				position: fixed;
+				justify-content: center;
+				margin-top: 0px;
+				padding: 20px;
+				background: #fff;
+				border-bottom: 1px solid #ababab;
+				z-index: 10;
+				.mobile-menu-icon {
+					display: flex;
+				}
+				ul {
+					display: none;
+					flex-direction: column;
+					align-items: center;
+					position: absolute;
+					top: 56px;
+					left: 0;
+					right: 0;
+					padding: 0;
+					padding-bottom: 25px;
+					background: #fff;
+					li {
+						margin-top: 15px;
+						margin-right: 0;
+						a {
+							padding: 0;
+							font-size: 22px;
+							font-weight: 700;
+							text-transform: uppercase;
+							color: #999;
+						}
+						a.started {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+		.decoration.hide-lg {
+			display: flex;
+		}
+		.banner-container {
 			flex-direction: column;
 			align-items: center;
 		}
-	}
-	.about-img-container {
-		margin-bottom: 60px;
-	}
-	body {
-		.s-about {
+		.banner {
+			.banner-content {
+				/*margin-bottom: 170px;*/
+			}
+		}
+		.button-container {
+			width: 390px;
+			justify-content: space-between;
+			.button {
+				margin-top: 25px;
+			}
+		}
+		body {
 			.content {
 				width: 90%;
 				align-items: center;
@@ -45,218 +182,96 @@
 				margin: 0 auto;
 			}
 		}
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	header {
-		nav {
-			margin-top: 5px;
-		}
-	}
-	nav {
-		padding: 10px!important;
-		ul {
-			width: 100%;
-			justify-content: space-between;
-			padding: 0;
-			li {
-				margin-right: 1px;
-				a {
-					font-size: 16px;
-				}
+		.banner {
+			.banner-content {
+				margin-top: 175px;
 			}
 		}
-	}
-	.s-why {
-		padding-right: 5px;
-	}
-	.features {
-		justify-content: center;
-	}
-	.s-about {
-		.container {
-			padding-right: 10px;
+		.language-switcher {
+			margin-top: 75px;
+			margin-bottom: 250px;
+			margin-left: 0px;
+			margin-right: 0px;
+			transform: rotate(0deg);
 		}
-	}
-	.team-content {
-		width: 80%;
-	}
-	.employees {
-		justify-content: center;
-	}
-	footer {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	section {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	header {
-		height: auto;
-		background: #5F5865;
-		nav {
-			width: 100%;
-			position: fixed;
-			justify-content: center;
-			margin-top: 0px;
-			padding: 20px;
-			background: #fff;
-			border-bottom: 1px solid #ababab;
-			z-index: 10;
-			.mobile-menu-icon {
-				display: flex;
-			}
-			ul {
-				display: none;
-				flex-direction: column;
-				align-items: center;
-				position: absolute;
-				top: 56px;
-				left: 0;
-				right: 0;
-				padding: 0;
-				padding-bottom: 25px;
-				background: #fff;
-				li {
-					margin-top: 15px;
-					margin-right: 0;
-					a {
-						padding: 0;
-						font-size: 22px;
-						font-weight: 700;
-						text-transform: uppercase;
-						color: #999;
-					}
-					a.started {
-						border: none;
-					}
-				}
+		.s-why {
+			height: auto;
+			background: #F1F3F7;
+			padding-right: 15px;
+			.button-why {
+				margin-bottom: 240px;
 			}
 		}
-	}
-	.decoration.hide-lg {
-		display: flex;
-	}
-	.banner-container {
-		flex-direction: column;
-		align-items: center;
-	}
-	.banner {
-		.banner-content {
-			/*margin-bottom: 170px;*/
-		}
-	}
-	.button-container {
-		width: 390px;
-		justify-content: space-between;
-		.button {
-			margin-top: 25px;
-		}
-	}
-	body {
-		.content {
-			width: 90%;
+		.why-container {
 			align-items: center;
+			align-content: center;
 			justify-content: center;
-			text-align: center;
-			margin: 0 auto;
-		}
-	}
-	.banner {
-		.banner-content {
-			margin-top: 175px;
-		}
-	}
-	.language-switcher {
-		margin-top: 75px;
-		margin-bottom: 250px;
-		margin-left: 0px;
-		margin-right: 0px;
-		transform: rotate(0deg);
-	}
-	.s-why {
-		height: auto;
-		background: #F1F3F7;
-		padding-right: 15px;
-		.button-why {
-			margin-bottom: 240px;
-		}
-	}
-	.why-container {
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		.content {
-			margin: 0px;
-			margin-top: 125px;
-		}
-	}
-	.why-content {
-		.button-container {
-			width: 100%;
-			justify-content: center;
-			.button {
-				margin-top: 25px;
+			.content {
+				margin: 0px;
+				margin-top: 125px;
 			}
 		}
-	}
-	.s-features {
-		.features-text {
-			margin-top: 125px;
-		}
-		.features {
-			justify-content: center;
-		}
-		.feature {
-			margin-bottom: 15px;
-		}
-	}
-	footer {
-		.footer-nav {
-			display: none;
-		}
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	header {
-		.button-container {
-			width: 100%;
-			justify-content: center;
-			.button {
-				margin-top: 25px;
-				margin-right: 5px;
+		.why-content {
+			.button-container {
+				width: 100%;
+				justify-content: center;
+				.button {
+					margin-top: 25px;
+				}
 			}
 		}
-	}
-	.s-features {
-		.features-img {
-			width: 100%;
+		.s-features {
+			.features-text {
+				margin-top: 125px;
+			}
+			.features {
+				justify-content: center;
+			}
+			.feature {
+				margin-bottom: 15px;
+			}
 		}
-	}
-	.features {
-		.feature {
-			width: 90%;
-			&-img {
+		footer {
+			.footer-nav {
 				display: none;
 			}
-			&-text {
+		}
+	}
+	
+	@media only screen and (max-width: 480px) {
+		header {
+			.button-container {
+				width: 100%;
+				justify-content: center;
+				.button {
+					margin-top: 25px;
+					margin-right: 5px;
+				}
+			}
+		}
+		.s-features {
+			.features-img {
 				width: 100%;
 			}
 		}
-	}
-	.employee {
-		img {
-			width: 100%;
-			height: auto;
-			max-width: 300px;
+		.features {
+			.feature {
+				width: 90%;
+				&-img {
+					display: none;
+				}
+				&-text {
+					width: 100%;
+				}
+			}
+		}
+		.employee {
+			img {
+				width: 100%;
+				height: auto;
+				max-width: 300px;
+			}
 		}
 	}
-}
-
-@media only screen and (max-width: 320px) {}
+	
+	@media only screen and (max-width: 320px) {}
