@@ -4,7 +4,7 @@ $(function () {
 	$(document).on("scroll", onScroll);
 	$("a[href^='#']").on("click", scrollTo);
 	$(".scroll-arrow").on("click", scrollToNext);
-	$(".button-started").on("click", function () {
+	$("header .button-started").on("click", function () {
 		scroll($("#why"));
 	});
 	$(".button-why").on("click", function () {
@@ -101,13 +101,23 @@ $(function () {
 		controlNav: false,
 		slideshow: true,
 		smoothHeight: true,
-		prevText: "<<",           
+		prevText: "<<",
 		nextText: ">>",
-		start: function(){
+		start: function () {
 			$('.slider').children('li').css({
 				'opacity': 1,
 				'position': 'relative'
 			});
 		}
 	});
+	$("#modal").iziModal();
+	$(".started").on("click", function (event) {
+		console.log("ololo");
+		event.preventDefault();
+		//$('#modal').iziModal('setZindex', 99999);
+		//$('#modal').iziModal('open', { zindex: 99999 });
+		$('#modal').iziModal('open');
+	});
+
+
 });

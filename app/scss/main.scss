@@ -102,6 +102,16 @@ h2 {
 	color: #999
 }
 
+.iziModal-wrap {
+	display: flex;
+	.iziModal-content {
+		text-align: center;
+		h3 {
+			font-size: 36px;
+		}
+	}
+}
+
 nav {
 	h1 {
 		font-family: 'Hiring-Regular', sans-serif;
@@ -267,7 +277,8 @@ header {
 		border-radius: 50%;
 	}
 	&-text {
-		width: 85%;
+		text-align: center;
+		width: 75%;
 		h4 {
 			font-size: 21px;
 		}
@@ -387,9 +398,32 @@ header {
 }
 
 .s-contacts {
-	height: 1080px;
 	background: url(../img/contacts-bg.jpg) no-repeat;
 	background-size: cover;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 100px;
+	.button-features {
+		margin-left: 25px;
+	}
+	img {
+		margin-top: 100px;
+		width: 70%;
+		height: auto;
+	}
+}
+
+.contacts-content {
+	margin-top: 150px;
+	color: #fff;
+	P {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	h2 {
+		margin-bottom: 55px;
+		font-size: 42px;
+	}
 }
 
 footer {
