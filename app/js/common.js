@@ -113,7 +113,6 @@ $(function () {
 	$("#modal").iziModal({
 	});
 	$(".trigger-modal").on("click", function (event) {
-		console.log("ololo");
 		event.preventDefault();	
 		$('#modal').iziModal('open');
 	});
