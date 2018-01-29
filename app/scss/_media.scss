@@ -101,6 +101,26 @@
 		.employees {
 			justify-content: center;
 		}
+		.s-contacts {
+			padding-top: 25px;
+			text-align: center;
+			.contacts-content {
+				.contacts-button-container {
+					justify-content: space-between;
+				}
+			}
+		}
+		.contacts-content {
+			flex-direction: column;
+			img {
+				margin-top: 50px;
+				;
+				width: 90%;
+			}
+		}
+		.contacts-info {
+			width: 90%;
+		}
 		footer {
 			padding-left: 5px;
 			padding-right: 5px;

@@ -112,9 +112,15 @@ $(function () {
 	});
 	$("#modal").iziModal({
 	});
+	$("#modal-idea").iziModal({
+	});
 	$(".trigger-modal").on("click", function (event) {
 		event.preventDefault();	
 		$('#modal').iziModal('open');
+	});
+	$(".trigger-idea").on("click", function (event) {
+		event.preventDefault();	
+		$('#modal-idea').iziModal('open');
 	});
 
 

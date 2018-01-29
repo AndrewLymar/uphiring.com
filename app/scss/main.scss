@@ -149,6 +149,61 @@ h2 {
 	}
 }
 
+#modal-idea {
+	background-color: #534B5A;
+	.iziModal-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-bottom: 100px;
+		p {
+			text-align: center;
+			font-size: 24px;
+			color: #fff;
+		}
+		form {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 25px;
+			textarea {
+				margin: 0 auto;
+				
+				height: 150px;
+			}
+			button {
+				position: relative;
+				top: 15px;
+				margin-top: 50px;
+				border: none;
+				margin: 0 auto;
+				width: 200px;
+			}
+		}
+		button.icon-close {
+				background: #fe8c00;
+				margin-bottom: 10px;
+				position: absolute;
+				right: -8px;
+				top: -8px;
+				font-size: 14px;
+				font-weight: bold;
+				border-radius: 50%;
+				width: 30px;
+				height: 30px;
+				border: 0;
+				color: #a9a9a9;
+				cursor: pointer;
+				border: none;
+				outline: none;
+			}
+			.icon-close:before {
+				color: #fff;
+				content: "X";
+			}
+	}
+}
+
 nav {
 	h1 {
 		font-family: 'Hiring-Regular', sans-serif;
@@ -282,7 +337,8 @@ header {
 		width: 90%;
 		max-width: 1300px;
 		background: url('../img/3-layers.png') no-repeat;
-		background-size: contain;
+		background-size: 99%;
+		background-position-x: 40%;
 		.features-img {
 			width: 100%;
 			margin-top: 2%;
@@ -379,9 +435,7 @@ header {
 				color: #999;
 			}
 		}
-		.flex-viewport {
-
-		}
+		.flex-viewport {}
 	}
 	img {
 		width: 60%;
@@ -446,29 +500,44 @@ header {
 .s-contacts {
 	background: url(../img/contacts-bg.jpg) no-repeat;
 	background-size: cover;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 150px;
 	padding-bottom: 150px;
+	.contacts-text {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
 	.button-features {
 		margin-left: 25px;
 	}
 	img {
-		margin-top: 100px;
-		width: 70%;
+		width: 50%;
 		height: auto;
 	}
 }
 
 .contacts-content {
-	margin-top: 150px;
+	width: 100%;
+	max-width: 1600px;
+}
+
+.contacts-info {
+	width: 45%;
+	margin-right: 5%;
 	color: #fff;
 	P {
-		font-size: 14px;
-		text-transform: uppercase;
+		font-size: 16px;
 	}
 	h2 {
-		margin-bottom: 55px;
-		font-size: 38px;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 44px;
 	}
 }
 
