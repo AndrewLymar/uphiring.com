@@ -37,10 +37,13 @@
 		}
 		body {
 			.s-about {
+				.container {
+					padding-top: 50px;
+					justify-content: flex-start;
+				}
 				.content {
 					width: 90%;
 					align-items: center;
-					justify-content: center;
 					text-align: center;
 					margin: 0 auto;
 					.hide-lg {
@@ -49,9 +52,6 @@
 					p {
 						color: #fe8c00;
 					}
-				}
-				.container {
-					justify-content: center;
 				}
 			}
 		}
@@ -140,10 +140,6 @@
 	}
 	
 	@media only screen and (max-width: 800px) {
-		section {
-			padding-left: 15px;
-			padding-right: 15px;
-		}
 		body {
 			header {
 				height: auto;
@@ -230,9 +226,10 @@
 			transform: rotate(0deg);
 		}
 		.s-why {
+			padding-left: 10px;
+			padding-right: 10px;
 			height: auto;
 			background: #F1F3F7;
-			padding-right: 15px;
 			.button-why {
 				margin-bottom: 240px;
 			}
@@ -243,7 +240,7 @@
 			justify-content: center;
 			.content {
 				margin: 0px;
-				margin-top: 125px;
+				margin-top: 50px;
 			}
 		}
 		.why-content {
@@ -273,6 +270,12 @@
 			margin-bottom: 70px;
 		}
 		.s-contacts {
+			.contacts-content {
+				img {
+					width: 100%;
+				}
+			}
+				
 			.contacts-button-container {
 				justify-content: center;
 				.button-features {
@@ -331,6 +334,8 @@
 			}
 		}
 		.s-contacts {
+			padding-left: 20px;
+			padding-right: 20px;
 			.contacts-content {
 				.contacts-button-container {
 					justify-content: center;
