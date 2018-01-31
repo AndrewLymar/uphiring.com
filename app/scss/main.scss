@@ -508,6 +508,12 @@ header {
 	.contacts-text {
 		margin-top: 15px;
 		margin-bottom: 15px;
+		p {
+			font-size: 18px;
+			span {
+				color: #fe8c00;
+			}
+		}
 	}
 	.button-features {
 		margin-left: 25px;
