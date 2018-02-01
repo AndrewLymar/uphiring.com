@@ -195,6 +195,9 @@
 		.banner {
 			.banner-content {
 				margin-bottom: 170px;
+				p {
+					margin-bottom: 30px;
+				}
 			}
 		}
 		.button-container {
@@ -215,7 +218,7 @@
 		}
 		.banner {
 			.banner-content {
-				margin-top: 175px;
+				margin-top: 110px;
 			}
 		}
 		.language-switcher {
@@ -231,7 +234,7 @@
 			height: auto;
 			background: #F1F3F7;
 			.button-why {
-				margin-bottom: 240px;
+				margin-bottom: 175px;
 			}
 		}
 		.why-container {
@@ -264,10 +267,15 @@
 			}
 		}
 		.about-us {
+			height: auto;
 			margin-top: 0px;
+			padding-bottom: 70px;
 		}
 		.employees {
 			margin-bottom: 70px;
+		}
+		.s-review {
+			padding-top: 50px;
 		}
 		.s-contacts {
 			.contacts-content {
