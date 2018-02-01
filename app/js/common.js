@@ -120,16 +120,16 @@ $(function () {
 		event.preventDefault();
 		$('#modal-idea').iziModal('open');
 	});
-
+/*
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
 
 		var $form = $(this);
 		$.post($form.attr("action"), $form.serialize()).then(function () {
-			var s = $form.serialize();
-			console.log(s.name);
+			$(".icon-close").click();
+			
 		});
 	});
-
+*/
 
 });
