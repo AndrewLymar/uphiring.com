@@ -110,17 +110,24 @@ $(function () {
 			});
 		}
 	});
-	$("#modal").iziModal({
-	});
-	$("#modal-idea").iziModal({
-	});
+	$("#modal").iziModal({});
+	$("#modal-idea").iziModal({});
 	$(".trigger-modal").on("click", function (event) {
-		event.preventDefault();	
+		event.preventDefault();
 		$('#modal').iziModal('open');
 	});
 	$(".trigger-idea").on("click", function (event) {
-		event.preventDefault();	
+		event.preventDefault();
 		$('#modal-idea').iziModal('open');
+	});
+
+	$("#contact-form").submit(function (e) {
+		e.preventDefault();
+
+		var $form = $(this);
+		$.post($form.attr("action"), $form.serialize()).then(function () {
+			alert("Thank you!");
+		});
 	});
 
 
