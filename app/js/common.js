@@ -122,10 +122,10 @@ $(function () {
 	});
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
-
 		var $form = $(this);
+		$(".success").fadeIn(100);
 		$.post($form.attr("action"), $form.serialize()).then(function () {
-		    $(".success ").fadeIn();
+			$(".success").text("Спасибо! Ваше сообщение отправлено!");
 			setTimeout(function () {
 				$(".success ").fadeOut();
 			}, 1000);

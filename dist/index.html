@@ -85,7 +85,7 @@
 			<h2>Основные особенности</h2>
 			<!--<p>Features which our platform allow to make million members worldwide</p>-->
 		</div>
-		<div class="features flex-row flex-wrap flex-between">
+		<div class="features flex-row flex-wrap flex-around">
 			<div class="feature flex-row">
 				<div class="feature-img flex-row flex-centered">
 					<img src="img/todo.png" alt="todo">
@@ -236,7 +236,7 @@
 				<div class="decoration"></div>
 			</div>
 			<h2>Это мы</h2>
-			<div class="employees flex-row flex-between flex-wrap">
+			<div class="employees flex-row flex-around flex-wrap">
 				<div class="employee flex-col flex-middle">
 					<img src="img/alex.jpg" alt="employee1">
 					<h4>Алексей Крупицкий </h4>
@@ -343,9 +343,9 @@
 		<input type="text" required="required" name="name" value="" placeholder="Ваше имя*" pattern="^[А-Яа-яЁёa-zA-Z\s]+$" title="Enter the correct name. The name can not contain numbers, special characters, only the Latin and Cyrillic.">
 		<input type="text" name="email" value="" placeholder="Ваш email" name="email" value="" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" title="Enter the correct email. The email must be like sample@mail.com.">
 		<input type="text" name="telephone" value="" placeholder="Ваш телефон" placeholder="Your phone number" name="telephone" value="" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Enter the correct telephone number. The number must contain only digit.">
-		<textarea name="" id="" cols="58" rows="50" placeholder="Ваша идея"></textarea>
+		<textarea name="message" cols="58" rows="50" placeholder="Ваша идея"></textarea>
 		<p class="req-fields">* Поля, обязательные для заполнения</p>
-		<p class="success">Спасибо! Ваше сообщение отправлено!</p>
+		<p class="success">Идет отправка сообщения...</p>
 		<button type="submit" class="button button-started">Отправить</button>
 		</form>
 	</div>
