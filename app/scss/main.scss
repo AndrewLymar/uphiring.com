@@ -282,7 +282,7 @@ header {
 	position: relative;
 	height: 1080px;
 	//background: url(../img/header-bg.jpg) no-repeat;
-	background-size: cover;
+	background-size: cover!important;
 	color: #fff;
 	nav {
 		padding-left: 120px;
@@ -358,7 +358,7 @@ header {
 	height: 1080px;
 	padding-right: 10%;
 	/*background: url(../img/why-bg.jpg) no-repeat;*/
-	background-size: cover;
+	background-size: cover!important;
 	.why-content {
 		width: 560px;
 		margin-top: 290px;
