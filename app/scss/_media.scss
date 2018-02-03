@@ -11,7 +11,7 @@
 		}
 		.s-why {
 			padding-right: 5%;
-			background-position: 70%;
+			background-position: 70%!important;
 		}
 		.language-switcher {
 			a.active,
@@ -99,7 +99,11 @@
 			img {
 				display: none;
 			}
+			
 		}
+		.next-arrow , .prev-arrow {
+				display: none!important;
+			}
 		body {
 			.s-about {
 				.container {
@@ -126,7 +130,6 @@
 			flex-direction: column;
 			img {
 				margin-top: 50px;
-				;
 				width: 90%;
 			}
 		}

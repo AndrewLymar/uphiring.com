@@ -94,22 +94,22 @@ $(function () {
 		$("nav ul").css("display", "none");
 		menuIsOpened = false;
 	}
-
-	$('.slide-wrapper').flexslider({
-		selector: ".slider > li",
-		animation: "slide",
-		controlNav: false,
-		slideshow: true,
-		smoothHeight: true,
-		prevText: "<<",
-		nextText: ">>",
-		start: function () {
-			$('.slider').children('li').css({
-				'opacity': 1,
-				'position': 'relative'
-			});
-		}
-	});
+	/*
+		$('.slide-wrapper').flexslider({
+			selector: ".slider > li",
+			animation: "slide",
+			controlNav: false,
+			slideshow: true,
+			smoothHeight: true,
+			prevText: ".",
+			nextText: ".",
+			start: function () {
+				$('.slider').children('li').css({
+					'position': 'relative'
+				});
+			}
+		});
+		*/
 	$("#modal").iziModal({});
 	$("#modal-idea").iziModal({});
 	$(".trigger-modal").on("click", function (event) {
@@ -123,13 +123,29 @@ $(function () {
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
 		var $form = $(this);
-		$(".success").fadeIn(100);
+		$(".success").fadeIn(0);
 		$.post($form.attr("action"), $form.serialize()).then(function () {
 			$(".success").text("Спасибо! Ваше сообщение отправлено!");
 			setTimeout(function () {
 				$(".success ").fadeOut();
-			}, 1000);
+			}, 2000);
 		});
 	});
+	$(".slider").slick({
+		adaptiveHeight: true,
+		autoplay: true,
+		nextArrow: '<div class="next-arrow"></div>',
+		prevArrow: '<div class="prev-arrow"></div>'
+	});
+	/*
+	if (($("header h2").text()) == "UP HIRING - an innovative platform that introduces modern technology interviews") {
+		console.log("english");
+		$("header").addClass("header-en-bg");
+		$(".s-why").addClass("why-en-bg");
+	}
+	else {
+		console.log("ru");
+	}
+	*/
 
 });

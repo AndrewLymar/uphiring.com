@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class="flex-col" id="home">
+	<header class="header-ru flex-col" id="home">
 		<nav class="flex-row flex-middle flex-between flex-wrap">
 			<a href="">
 				<h1>Up Hiring</h1>
@@ -41,21 +41,22 @@
 					<!--<div class="button button-features flex-row flex-centered">Explore Features</div>-->
 				</div>
 			</div>
-			<!--
+			
 			<div class="language-switcher flex-row">
-				<a class="active lng" id="en">EN</a>
+				<a href="uphiring.com/en/index.html" id="en">EN</a>
 				<span>|</span>
-				<a class="lng" id="ru">RU</a>
+				<a href="uphiring.com/index.html" class="lng active" id="ru">RU</a>
+				<!--
 				<span>|</span>
-				<a class="lng" id="ru">UK</a>
+				<a class="lng" id="ru">UK</a>-->
 			</div>
-			-->
+			
 		</div>
 		<div class="scroll-arrow flex-col flex-centered">
 			<i class="icon icon-arrow-down"></i>
 		</div>
 	</header>
-	<section class="s-why flex-col" id="why">
+	<section class="s-why s-why-ru flex-col" id="why">
 		<div class="why-container flex-row flex-right">
 			<div class="content why-content dark-color-text flex-col">
 				<div class="decorations flex-row flex-middle">
@@ -187,14 +188,15 @@
 					</div>
 					<h2>Отзывы об Up Hiring</h2>
 				</div>
-				<ul class="slider">
-					<li class="slide ">
-						<p class="review-text">Представленный проект UP Hiring кажется интересным новым средством поиска сотрудников. Специфика деятельности нашей компании связана с оперативным поиском сотрудников для выполнения целей конкретного проекта. Мы часто сталкиваемся с фактом неготовности кандидатов выполнять поставленные задачи с соблюдением определенных требований нашей компании. UP Hiring кажется хорошим средством быстрого рекрутинга персонала с возможностью быстро выйти на живое общение с человеком. В случае выхода данного сайта на рынок, наша компания безусловно будет его использовать.</p>
-						<div class="review-about">
-							<p class="name">Виктория Крыженко</p>
-							<p class="position">Начальник отдела рекрутинга, Raus Ltd</p>
+				<ul class="slider flex-row">
+					<li class="slide">
+						<div class="review-container">
+							<p class="review-text">Представленный проект UP Hiring кажется интересным новым средством поиска сотрудников. Специфика деятельности нашей компании связана с оперативным поиском сотрудников для выполнения целей конкретного проекта. Мы часто сталкиваемся с фактом неготовности кандидатов выполнять поставленные задачи с соблюдением определенных требований нашей компании. UP Hiring кажется хорошим средством быстрого рекрутинга персонала с возможностью быстро выйти на живое общение с человеком. В случае выхода данного сайта на рынок, наша компания безусловно будет его использовать.</p>
+							<div class="review-about">
+								<p class="name">Виктория Крыженко</p>
+								<p class="position">Начальник отдела рекрутинга, Raus Ltd</p>
+							</div>
 						</div>
-
 
 					</li>
 					<li class="slide">
@@ -208,6 +210,7 @@
 					</li>
 				</ul>
 			</div>
+
 			<img src="img/iphones.png" alt="" class="src">
 
 		</div>
@@ -339,14 +342,14 @@
 	<div id="modal-idea">
 		<button data-izimodal-close="" class="icon-close"></button>
 		<p>Предложите идею:</p>
-		<form name=contact action="" id="contact-form" netlify >
-		<input type="text" required="required" name="name" value="" placeholder="Ваше имя*" pattern="^[А-Яа-яЁёa-zA-Z\s]+$" title="Enter the correct name. The name can not contain numbers, special characters, only the Latin and Cyrillic.">
-		<input type="text" name="email" value="" placeholder="Ваш email" name="email" value="" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" title="Enter the correct email. The email must be like sample@mail.com.">
-		<input type="text" name="telephone" value="" placeholder="Ваш телефон" placeholder="Your phone number" name="telephone" value="" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Enter the correct telephone number. The number must contain only digit.">
-		<textarea name="message" cols="58" rows="50" placeholder="Ваша идея"></textarea>
-		<p class="req-fields">* Поля, обязательные для заполнения</p>
-		<p class="success">Идет отправка сообщения...</p>
-		<button type="submit" class="button button-started">Отправить</button>
+		<form name=contact action="" id="contact-form" netlify>
+			<input type="text" required="required" name="name" value="" placeholder="Ваше имя*" pattern="^[А-Яа-яЁёa-zA-ZА-ЯІЇЄҐа-яіїєґ\s]+$" title="Enter the correct name. The name can not contain numbers, special characters, only the Latin and Cyrillic.">
+			<input type="text" name="email" value="" placeholder="Ваш email" name="email" value="" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" title="Enter the correct email. The email must be like sample@mail.com.">
+			<input type="text" name="telephone" value="" placeholder="Ваш телефон" placeholder="Your phone number" name="telephone" value="" pattern="^((8|0|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Enter the correct telephone number. The number must contain only digit.">
+			<textarea name="message" cols="58" rows="50" placeholder="Ваша идея"></textarea>
+			<p class="req-fields">* Поля, обязательные для заполнения</p>
+			<p class="success">Идет отправка сообщения...</p>
+			<button type="submit" class="button button-started">Отправить</button>
 		</form>
 	</div>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">

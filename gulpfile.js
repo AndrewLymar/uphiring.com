@@ -19,6 +19,7 @@ gulp.task('js', function() {
 		'app/libs/*.js',
 		'app/js/jquery.flexslider-min.js',
 		'app/js/iziModal.min.js',
+		'app/js/slick.min.js',
 		'app/js/common.js'
 		])
 	.pipe(concat('scripts.min.js'))
