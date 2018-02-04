@@ -94,22 +94,6 @@ $(function () {
 		$("nav ul").css("display", "none");
 		menuIsOpened = false;
 	}
-	/*
-		$('.slide-wrapper').flexslider({
-			selector: ".slider > li",
-			animation: "slide",
-			controlNav: false,
-			slideshow: true,
-			smoothHeight: true,
-			prevText: ".",
-			nextText: ".",
-			start: function () {
-				$('.slider').children('li').css({
-					'position': 'relative'
-				});
-			}
-		});
-		*/
 	$("#modal").iziModal({});
 	$("#modal-idea").iziModal({});
 	$(".trigger-modal").on("click", function (event) {
@@ -120,12 +104,21 @@ $(function () {
 		event.preventDefault();
 		$('#modal-idea').iziModal('open');
 	});
+	var message;
+	if (($("html").attr("lang")) == "en") {
+		console.log("english");
+		message = "Thank you! Your message has been sent!";
+	}
+	else {
+		console.log("ru");
+		message = "Спасибо! Ваше сообщение отправлено!";
+	}
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
 		var $form = $(this);
 		$(".success").fadeIn(0);
 		$.post($form.attr("action"), $form.serialize()).then(function () {
-			$(".success").text("Спасибо! Ваше сообщение отправлено!");
+			$(".success").text(message);
 			setTimeout(function () {
 				$(".success ").fadeOut();
 			}, 2000);
@@ -137,15 +130,6 @@ $(function () {
 		nextArrow: '<div class="next-arrow"></div>',
 		prevArrow: '<div class="prev-arrow"></div>'
 	});
-	/*
-	if (($("header h2").text()) == "UP HIRING - an innovative platform that introduces modern technology interviews") {
-		console.log("english");
-		$("header").addClass("header-en-bg");
-		$(".s-why").addClass("why-en-bg");
-	}
-	else {
-		console.log("ru");
-	}
-	*/
+	
 
 });
