@@ -93,8 +93,9 @@
 			padding-left: 3%;
 			padding-right: 3%;
 			.slide-wrapper {
-				width: 90%;
+				width: 85%;
 				margin-right: 0px;
+				margin: 0 auto;
 			}
 			img {
 				display: none;
@@ -102,7 +103,7 @@
 			
 		}
 		.next-arrow , .prev-arrow {
-				display: none!important;
+				/*display: none!important;*/
 			}
 		body {
 			.s-about {
@@ -197,7 +198,6 @@
 		}
 		.banner {
 			.banner-content {
-				margin-bottom: 170px;
 				p {
 					margin-bottom: 30px;
 				}
@@ -226,7 +226,7 @@
 		}
 		.language-switcher {
 			margin-top: 75px;
-			margin-bottom: 250px;
+			margin-bottom: 200px;
 			margin-left: 0px;
 			margin-right: 0px;
 			transform: rotate(0deg);

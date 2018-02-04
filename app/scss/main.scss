@@ -453,12 +453,20 @@ header {
 .review-content {
 	padding-left: 100px;
 	.slide-wrapper {
-		width: 400px;
+		width: 35%;
 		margin-right: 5%;
 		.slider {
 			display: flex!important;
 			align-items: center;
 			padding: 0;
+			&:focus {
+				border: none;
+				outline: 0;
+			}
+		}
+		.slider:focus {
+			border: none;
+				outline: 0;
 		}
 		p {
 			margin: 0;
@@ -490,18 +498,19 @@ header {
 		}
 		.next-arrow {
 			position: relative;
-			width: 168px;
-			height: 34px;
-			background: url("../img/right-arrow.png") no-repeat;
+			width: 72px;
+			height: 24px;
+			right: -4%;
+			background: url("../img/right-arrow.svg") no-repeat;
 			background-size: cover;
 			cursor: pointer;
 		}
 		.prev-arrow {
 			position: relative;
-			width: 168px;
-			height: 34px;
+			width: 72px;
+			height: 24px;
 			left: -8%;
-			background: url("../img/left-arrow.png") no-repeat;
+			background: url("../img/left-arrow.svg") no-repeat;
 			background-size: cover;
 			cursor: pointer;
 		}
