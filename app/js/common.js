@@ -105,13 +105,18 @@ $(function () {
 		$('#modal-idea').iziModal('open');
 	});
 	var message;
-	if (($("html").attr("lang")) == "en") {
-		console.log("english");
-		message = "Thank you! Your message has been sent!";
-	}
-	else {
-		console.log("ru");
-		message = "Спасибо! Ваше сообщение отправлено!";
+	switch ($("html").attr("lang")) {
+		case "ru":
+			message = "Спасибо! Ваше сообщение отправлено!";
+			break;
+		case "en":
+			message = "Thank you! Your message has been sent!";
+			break;
+		case "uk":
+			message = "Дякуємо! Ваше повідомлення відправлено!";
+			break;
+		default:
+			message = "Thank you! Your message has been sent!";
 	}
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
@@ -130,6 +135,4 @@ $(function () {
 		nextArrow: '<div class="next-arrow"></div>',
 		prevArrow: '<div class="prev-arrow"></div>'
 	});
-	
-
 });
