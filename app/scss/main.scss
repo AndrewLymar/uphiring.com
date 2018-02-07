@@ -107,34 +107,17 @@ h2 {
 	color: #999
 }
 
-#modal {
+#modal,
+#modal-idea {
 	background-color: #534B5A;
+}
+
+#modal {
 	.iziModal-wrap {
 		display: flex;
 		border-radius: 25px;
 		.iziModal-content {
 			padding: 40px 30px!important;
-			button {
-				background: #fe8c00;
-				margin-bottom: 10px;
-				position: absolute;
-				right: -8px;
-				top: -8px;
-				font-size: 14px;
-				font-weight: bold;
-				border-radius: 50%;
-				width: 30px;
-				height: 30px;
-				border: 0;
-				color: #a9a9a9;
-				cursor: pointer;
-				border: none;
-				outline: none;
-			}
-			.icon-close:before {
-				color: #fff;
-				content: "X";
-			}
 			.modal-container {
 				margin-top: 50px;
 			}
@@ -154,7 +137,6 @@ h2 {
 }
 
 #modal-idea {
-	background-color: #534B5A;
 	.iziModal-content {
 		display: flex;
 		flex-direction: column;
@@ -172,7 +154,7 @@ h2 {
 			flex-direction: column;
 			margin-bottom: 25px;
 			input {
-				width: 503px;
+				width: 90%;
 				height: 40px;
 				margin: 0 auto;
 				margin-bottom: 25px;
@@ -187,8 +169,9 @@ h2 {
 				}
 			}
 			textarea {
-				margin: 0 auto;
+				width: 90%;
 				height: 150px;
+				margin: 0 auto;
 				padding: 10px;
 				border: 1px solid #ddd;
 				color: #999;
@@ -217,27 +200,28 @@ h2 {
 				color: #FE8C00;
 			}
 		}
-		button.icon-close {
-			background: #fe8c00;
-			margin-bottom: 10px;
-			position: absolute;
-			right: -8px;
-			top: -8px;
-			font-size: 14px;
-			font-weight: bold;
-			border-radius: 50%;
-			width: 30px;
-			height: 30px;
-			border: 0;
-			color: #a9a9a9;
-			cursor: pointer;
-			border: none;
-			outline: none;
-		}
-		.icon-close:before {
-			color: #fff;
-			content: "X";
-		}
+	}
+}
+
+button.icon-close {
+	background: #fe8c00;
+	margin-bottom: 10px;
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	color: #a9a9a9;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	&:before {
+		color: #fff;
+		content: "X";
 	}
 }
 
@@ -282,7 +266,6 @@ nav {
 header {
 	position: relative;
 	height: 1080px;
-	//background: url(../img/header-bg.jpg) no-repeat;
 	background-size: cover!important;
 	color: #fff;
 	nav {
@@ -301,12 +284,6 @@ header {
 		}
 	}
 }
-/*
-.header-en-bg {
-	background: url(../img/header-bg-en.jpg) no-repeat!important;
-	background-size: cover!important;
-}
-*/
 
 .banner-content {
 	width: 500px;
@@ -358,7 +335,6 @@ header {
 	position: relative;
 	height: 1080px;
 	padding-right: 10%;
-	/*background: url(../img/why-bg.jpg) no-repeat;*/
 	background-size: cover!important;
 	.why-content {
 		width: 560px;
@@ -368,14 +344,7 @@ header {
 		}
 	}
 }
-/*
-.why-en-bg {
-	background: url(../img/why-bg-en.jpg) no-repeat!important;
-	background-size: cover!important;
-	background-position: 100%;
-}
 
-*/
 .s-features {
 	position: relative;
 	background: url(../img/features-bg.jpg) no-repeat;
@@ -433,11 +402,6 @@ header {
 			font-size: 21px;
 		}
 	}
-	/*
-	&:last-child {
-		justify-content: center;
-	}
-	*/
 }
 
 .feature:last-child {
@@ -467,7 +431,7 @@ header {
 		}
 		.slider:focus {
 			border: none;
-				outline: 0;
+			outline: 0;
 		}
 		p {
 			margin: 0;
@@ -515,32 +479,6 @@ header {
 			background-size: cover;
 			cursor: pointer;
 		}
-		/*
-		.flex-direction-nav {
-			display: flex;
-			padding: 0;
-			list-style: none;
-			position: absolute;
-			top: 45%;
-			li {
-				width: 32px;
-				height: 32px;
-				position: relative;
-				background: url("../img/next.png") no-repeat;
-				&:first-child {
-					left: -40%;
-				}
-				&:last-child {
-					right: -600%;
-				}
-			}
-			a {
-				font-size: 18px;
-				color: #fff;
-			}
-		}
-		.flex-viewport {}
-		*/
 	}
 	img {
 		width: 60%;

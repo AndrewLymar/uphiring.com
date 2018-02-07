@@ -13,6 +13,12 @@
 			padding-right: 5%;
 			background-position: 70%!important;
 		}
+		.s-about {
+			.container {
+				padding-left: 5%;
+				padding-right: 5%;
+			}
+		}
 		.language-switcher {
 			a.active,
 			a:hover {
@@ -100,11 +106,7 @@
 			img {
 				display: none;
 			}
-			
 		}
-		.next-arrow , .prev-arrow {
-				/*display: none!important;*/
-			}
 		body {
 			.s-about {
 				.container {
@@ -123,7 +125,7 @@
 			text-align: center;
 			.contacts-content {
 				.contacts-button-container {
-					justify-content: space-between;
+					justify-content: space-around;
 				}
 			}
 		}
@@ -205,7 +207,6 @@
 		}
 		.button-container {
 			width: 390px;
-			justify-content: space-between;
 			.button {
 				margin-top: 25px;
 			}
@@ -281,12 +282,14 @@
 			padding-top: 50px;
 		}
 		.s-contacts {
+			.contacts-info {
+				margin-right: 0px;
+			}
 			.contacts-content {
 				img {
 					width: 100%;
 				}
 			}
-				
 			.contacts-button-container {
 				justify-content: center;
 				.button-features {
@@ -297,6 +300,32 @@
 		footer {
 			.footer-nav {
 				display: none;
+			}
+		}
+	}
+	
+	@media only screen and (max-width: 625px) {
+		.s-contacts {
+			.contacts-button-container {
+				.button {
+					margin-right: 5px;
+					&:last-child {
+						margin-right: 0px;
+					}
+				}
+				.button-started {
+					margin-bottom: 25px;
+				}
+			}
+		}
+		#modal,
+		#modal-idea {
+			background-color: #534B5A;
+			.iziModal-content {
+				button.icon-close {
+					top: 10px;
+					right: 10px;
+				}
 			}
 		}
 	}
@@ -328,11 +357,6 @@
 				}
 			}
 		}
-		/*
-		.review-text, .review-about {
-			text-align: center;
-		}
-		*/
 		.employee {
 			h4 {
 				text-align: center;
@@ -349,9 +373,11 @@
 			padding-right: 20px;
 			.contacts-content {
 				.contacts-button-container {
+					width: 95%;
 					justify-content: center;
-					.button-started {
-						margin-bottom: 25px;
+					margin: 0 auto;
+					.button {
+						margin-right: 0px;
 					}
 				}
 			}
