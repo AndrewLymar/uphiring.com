@@ -424,14 +424,12 @@ header {
 			display: flex!important;
 			align-items: center;
 			padding: 0;
-			&:focus {
-				border: none;
-				outline: 0;
+			.slide {
+				&:focus {
+					border: none;
+					outline: 0;
+				}
 			}
-		}
-		.slider:focus {
-			border: none;
-			outline: 0;
 		}
 		p {
 			margin: 0;
