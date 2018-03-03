@@ -79,7 +79,7 @@ $(function () {
 
 		$target = $(target);
 		$("html, body").stop().animate({
-			'scrollTop': $target.offset().top + 2
+			'scrollTop': $target.offset().top - 76
 		}, 800, "swing", function () {
 			$(document).on("scroll", onScroll);
 		});
