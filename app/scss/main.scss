@@ -421,6 +421,7 @@ header {
 		width: 35%;
 		margin-right: 5%;
 		.slider {
+			position: relative;
 			display: flex!important;
 			align-items: center;
 			padding: 0;
@@ -460,21 +461,19 @@ header {
 			color: #B3B3B3;
 		}
 		.next-arrow {
-			position: relative;
-			width: 72px;
-			height: 24px;
-			right: -4%;
+			position: absolute;
+			width: 14px;
+			height: 56px;
+			right: -10%;
 			background: url("../img/right-arrow.svg") no-repeat;
-			background-size: cover;
 			cursor: pointer;
 		}
 		.prev-arrow {
-			position: relative;
-			width: 72px;
-			height: 24px;
-			left: -8%;
+			position: absolute;
+			width: 14px;
+			height: 56px;
+			left: -10%;
 			background: url("../img/left-arrow.svg") no-repeat;
-			background-size: cover;
 			cursor: pointer;
 		}
 	}

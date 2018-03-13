@@ -1,6 +1,7 @@
 $(function () {
 	var menuIsOpened = false;
 	var nav = $("nav");
+	var offset = 0;
 	$(document).on("scroll", onScroll);
 	$("a[href^='#']").on("click", scrollTo);
 	$(".scroll-arrow").on("click", scrollToNext);
@@ -10,10 +11,19 @@ $(function () {
 	$(".button-why").on("click", function () {
 		scroll($("#features"));
 	});
+
+	if ($(document).width() > "800") {
+		offset = 0;
+	} else {
+		offset = 76;
+	}
+
 	$(window).on("resize", function () {
 		if (!menuIsOpened && $(document).width() > "800") {
+			offset = 0;
 			showMenu();
 		} else if (menuIsOpened && $(document).width() < "800") {
+			offset = 76;
 			hideMenu();
 		}
 	});
@@ -79,7 +89,7 @@ $(function () {
 
 		$target = $(target);
 		$("html, body").stop().animate({
-			'scrollTop': $target.offset().top - 76
+			'scrollTop': $target.offset().top - offset
 		}, 800, "swing", function () {
 			$(document).on("scroll", onScroll);
 		});
