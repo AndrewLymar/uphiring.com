@@ -43,24 +43,7 @@ $(function () {
 	});
 
 	function onScroll(event) {
-		var scrollPos = $(document).scrollTop();
 
-		if (scrollPos > 0) {
-			nav.addClass("active");
-		} else {
-			nav.removeClass("active");
-		}
-
-		$("nav a").each(function () {
-			var currLink = $(this);
-			var refElement = $(currLink.attr("href"));
-			if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-				$("nav ul li a").removeClass("active");
-				currLink.addClass("active");
-			} else {
-				currLink.removeClass("active");
-			}
-		});
 	}
 
 	function scrollToNext(event) {

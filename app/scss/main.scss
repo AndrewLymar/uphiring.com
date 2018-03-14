@@ -214,12 +214,12 @@ button.icon-close {
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
-	border: 0;
 	color: #a9a9a9;
 	cursor: pointer;
 	border: none;
 	outline: none;
 	&:before {
+		margin: 0 auto;
 		color: #fff;
 		content: "X";
 	}
@@ -416,6 +416,7 @@ header {
 }
 
 .review-content {
+	height: 700px;
 	padding-left: 100px;
 	.slide-wrapper {
 		width: 35%;
